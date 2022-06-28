@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fatos Aleatórios do Planeta</title>
+    <meta
+      name="description"
+      content="Get a random fact about a planet in our solar system."
+    />
+    <meta name="author" content="The IPFS Docs team." />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: #444;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Fatos Aleatórios do Planeta</h1>
+    <p id="output_p"></p>
+    <script>
+      function main() {
+        const facts = [
+        'Marte é o lar da montanha mais alta do nosso sistema solar.',
+          'Apenas 18 das 40 missões a Marte foram bem sucedidas.',
+          'Pedaços de Marte caíram na Terra.',
+          'Um ano em Marte é 687 dias terrestres.',
+          'A temperatura em Marte varia de -153 a 20 ° C.',
+          'Um ano em Mercúrio é cerca de 88 dias terrestres.',
+          'A temperatura da superfície de Mercúrio varia de -173 a 427°C.',
+          'Mercúrio foi descoberto pela primeira vez no século 14 por astrônomos assírios.',
+          'Seu peso em Mercúrio seria 38% do seu peso na Terra.',
+          'Um dia na superfície de Mercúrio dura 176 dias terrestres.',
+          'A temperatura da superfície de Vênus é de cerca de 462 ° C.',
+          'Leva 225 dias para Vênus orbitar o sol.',
+          'Vênus foi descoberto pela primeira vez por astrônomos babilônicos do século 17.',
+          'Vênus é quase tão grande quanto a Terra com um diâmetro de 12.104 km.',
+          "A rotação da Terra está diminuindo gradualmente.",
+          'Existe apenas um satélite natural do planeta Terra, a lua.',
+          'A Terra é o único planeta em nosso sistema solar que não tem o nome de um deus.',
+          'A Terra é o planeta mais denso do sistema solar.',
+          'Um ano em Júpiter dura cerca de 4333 dias terrestres.',
+          'A temperatura da superfície de Júpiter é de cerca de -108°C.',
+          'Júpiter foi descoberto pela primeira vez por astrônomos babilônicos do século VII ou VIII.',
+          'Júpiter tem 4 anéis.',
+          'Um dia em Júpiter dura 9 horas e 55 minutos.',
+          'Saturno foi descoberto pela primeira vez pelos assírios do século VIII.',
+          'Saturno leva 10756 dias para orbitar o Sol.',
+          'Saturno pode ser visto a olho nu.',
+          'Saturno é o planeta mais plano.',
+          'Saturno é feito principalmente de hidrogênio.',
+          'Quatro naves espaciais visitaram Saturno.',
+          'Urano foi descoberto por William Herschel em 1781.',
+          'Um ano em Urano leva 30687 dias terrestres.',
+          'Urano gira em torno de seu eixo uma vez a cada 17 horas, 14 minutos.',
+          'Com temperatura atmosférica mínima de -224°C, Urano é quase o planeta mais frio do sistema solar.',
+          'Apenas uma espaçonave passou por Urano, a Voyager 2.',
+          'Netuno foi descoberto em 1846 por Urbain Le Verrier e Johann Galle.',
+          'Netuno tem 14 luas.',
+          'A temperatura média de Netuno é de cerca de -201 ° C.',
+          'Existe um modelo em escala 1:20 milhões do sistema solar na Suécia.',
+          'A diferença entre a Terra e nossa lua é maior do que os diâmetros de todos os planetas combinados.',
+          "O primeiro cálculo preciso da velocidade da luz foi usando as luas de Júpiter",
+          "Acredita-se que o campo magnético de Júpiter é resultado da rápida rotação do hidrogênio metálico no núcleo e é ~10x mais forte que o da Terra.",
+          'Vênus gira para trás.',
+          'Urano gira lateralmente, em relação ao plano eclíptico do sistema solar.',
+          "É mais fácil chegar a Plutão ou escapar do sistema solar da Terra do que ser capaz de <i>pousar</i> no Sol."
+        ]
+        document.querySelector('#output_p').innerHTML =
+          facts[Math.floor(Math.random() * facts.length)]
+      }
+    </script>
+  </body>
+</html>
